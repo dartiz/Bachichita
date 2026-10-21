@@ -1,0 +1,168 @@
+/* Configuraciones generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d090a;
+    background-image: linear-gradient(rgba(13, 9, 10, 0.7), rgba(13, 9, 10, 0.7)), url('assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e8e3e3;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Pantalla de inicio */
+.pantalla-inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0d090a, #2b0e18);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.pantalla-inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #f7dcdb;
+}
+
+#btn-empezar {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #7b1e35;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(123, 30, 53, 0.5);
+    transition: 0.3s;
+}
+
+#btn-empezar:hover {
+    background-color: #9d2543;
+    transform: scale(1.05);
+}
+
+/* Ocultar elementos */
+.oculto {
+    display: none !important;
+}
+
+/* Contenido Principal */
+#contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    animation: aparecer 2s ease-in;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+#titulo-principal {
+    font-size: 3.5rem;
+    color: #df989b;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #a89f9f;
+}
+
+/* Galería de Recuerdos (Videos y Fotos) */
+#galeria-recuerdos {
+    max-width: 600px;
+    width: 100%;
+}
+
+.recuerdo-item {
+    margin-bottom: 50px;
+    background-color: #1a1215;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.media-recuerdo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.texto-recuerdo {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #d1c5c5;
+}
+
+/* Mensaje final y Botones */
+footer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#mensaje-final {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #f7dcdb;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.botones-respuesta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-respuesta {
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-si {
+    background-color: #7b1e35;
+    color: white;
+    box-shadow: 0 4px 15px rgba(123, 30, 53, 0.4);
+}
+
+.btn-si:hover {
+    background-color: #9d2543;
+    transform: translateY(-3px);
+}
+
+.btn-no {
+    background-color: #2b2b2b;
+    color: #a8a8a8;
+}
+
+.btn-no:hover {
+    background-color: #404040;
+    color: white;
+}

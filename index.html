@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Bachichita 🤍</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente elegante de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Pantalla de inicio para activar la música -->
+    <div id="pantalla-inicio" class="pantalla-inicio">
+        <h1>Tenes que ver esto :D</h1>
+        <button id="btn-empezar">Toca aquí para descubrir que coño es esto</button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="contenido-principal" class="oculto">
+        <header>
+            <h1 id="titulo-principal">Para Bachichita</h1>
+            <p class="subtitulo">Solo mira esto por favor</p>
+        </header>
+
+       <section id="galeria-recuerdos">
+            <!-- PRIMERO LA FOTO -->
+            <div class="recuerdo-item">
+                <img src="assets/foto.jpg" alt="Nuestro recuerdo" class="media-recuerdo">
+                <p class="texto-recuerdo">La sonrisa que extraño.</p>
+            </div>
+
+            <!-- DE ÚLTIMO EL VIDEO -->
+            <div class="recuerdo-item">
+                <video controls autoplay muted loop playsinline class="media-recuerdo">
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+                <p class="texto-recuerdo">No puedo ni quiero olvidarte</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="mensaje-final-contenedor">
+                <p id="mensaje-final">Si querés,<br>ven a Manzana 40 el 26 de octubre a las 7 de la noshe.</p>
+                
+                <div class="botones-respuesta">
+                    <!-- REEMPLAZA EL 591... POR TU NÚMERO DE CELULAR -->
+                    <a href="https://wa.me/59175283729?text=Sí,%20quiero%20ir%20a%20Manzana%2040%20contigo%20%E2%9D%A4%EF%B8%8F" target="_blank" class="btn-respuesta btn-si">Chi</a>
+                    
+                    <a href="https://wa.me/59175283729?text=No%20creo%20poder,%20lo%20siento." target="_blank" class="btn-respuesta btn-no">No chupala maricon</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Tu canción -->
+    <audio id="musica-fondo" loop>
+        <source src="assets/somydarling.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
